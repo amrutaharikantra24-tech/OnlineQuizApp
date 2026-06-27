@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+html, body {
+    height: auto;
+    min-height: 100%;
+    overflow-y: scroll !important;
+    background-color: #e8d5f5;
+    background-image: 
+        radial-gradient(circle at 20% 20%, rgba(180,140,220,0.4) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(150,100,200,0.3) 0%, transparent 50%);
+    background-attachment: fixed;
+    padding: 30px 0;
+}
+
+/* Login & Register Box */
+.login-box {
+    background: rgba(255, 255, 255, 0.92);
+    padding: 45px;
+    border-radius: 24px;
+    box-shadow: 0 15px 50px rgba(140, 90, 200, 0.25);
+    width: 400px;
+    text-align: center;
+    border: 1px solid rgba(200, 160, 240, 0.5);
+    margin: 100px auto;
+}
+
+.login-box h2 {
+    color: #6a3fa0;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 15px;
+    border: 2px solid #c9a8e8;
+    border-radius: 10px;
+    font-size: 14px;
+    background: #f8f0ff;
+    transition: all 0.3s;
+}
+
+.login-box input:focus {
+    border-color: #8b5cc8;
+    outline: none;
+    background: white;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 13px;
+    background: linear-gradient(135deg, #9b6fd4, #6a3fa0);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.login-box button:hover {
+    opacity: 0.88;
+}
+
+.login-box a {
+    color: #7c4bb5;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Dashboard */
+.dashboard {
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.dashboard-header {
+    background: rgba(255,255,255,0.85);
+    padding: 25px 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 25px rgba(140,80,210,0.2);
+}
+
+.dashboard-header h2 {
+    color: #4a1f80;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.dashboard-header p {
+    color: #8055b0;
+    font-size: 15px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 10px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 20px;
+    padding: 35px 22px;
+    width: 220px;
+    box-shadow: 0 8px 25px rgba(140,80,210,0.18);
+    cursor: pointer;
+    border: 1px solid rgba(200,160,240,0.4);
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #c9a8e8, #7c4bb5);
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    background: linear-gradient(145deg, #c9a8e8, #7c4bb5);
+    box-shadow: 0 15px 35px rgba(120,60,200,0.35);
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #5a2d91;
+}
+
+.card p {
+    font-size: 13px;
+    color: #8866aa;
+    font-weight: 500;
+}
+
+.card:hover h3,
+.card:hover p {
+    color: white;
+}
+
+/* Quiz Box */
+.quiz-box {
+    background: rgba(255,255,255,0.92);
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 15px 40px rgba(140,80,210,0.22);
+    width: 580px;
+    margin: 40px auto;
+    border: 1px solid rgba(200,160,240,0.4);
+}
+
+.quiz-box h2 {
+    color: #6a3fa0;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 26px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e8d5f5;
+}
+
+.question {
+    margin-bottom: 20px;
+    line-height: 2.2;
+    background: linear-gradient(135deg, #f8f0ff, #f0e4ff);
+    padding: 18px 22px;
+    border-radius: 14px;
+    border-left: 5px solid #9b6fd4;
+}
+
+.question p {
+    font-weight: bold;
+    color: #4a2080;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.question input {
+    margin-right: 8px;
+    accent-color: #7c4bb5;
+    width: 16px;
+    height: 16px;
+}
+
+.quiz-box button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #9b6fd4, #6a3fa0);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.quiz-box button:hover {
+    opacity: 0.88;
+}
+
+/* Result Box */
+.result-box {
+    background: rgba(255,255,255,0.92);
+    padding: 50px 45px;
+    border-radius: 24px;
+    box-shadow: 0 15px 40px rgba(140,80,210,0.22);
+    width: 450px;
+    text-align: center;
+    border: 1px solid rgba(200,160,240,0.4);
+    margin: 100px auto;
+}
+
+.result-box h2 {
+    color: #6a3fa0;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.result-box p {
+    font-size: 24px;
+    color: #5a2d91;
+    font-weight: bold;
+    margin: 20px 0;
+    background: linear-gradient(135deg, #f0e4ff, #e4d0f8);
+    padding: 18px;
+    border-radius: 12px;
+    border: 2px solid #c9a8e8;
+}
+
+.result-box button {
+    padding: 12px 28px;
+    margin: 6px;
+    background: linear-gradient(135deg, #9b6fd4, #6a3fa0);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.result-box button:hover {
+    opacity: 0.88;
+}
+
+/* Logout */
+.logout {
+    margin-top: 25px;
+    padding: 11px 35px;
+    background: linear-gradient(135deg, #d898e8, #9b3fa8) !important;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}

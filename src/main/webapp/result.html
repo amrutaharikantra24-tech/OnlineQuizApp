@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="result-box">
+    <h2>Quiz Result</h2>
+    <p id="scoreText">Loading...</p>
+    <a href="quiz.html"><button>Try Again</button></a>
+    <a href="index.html"><button>Logout</button></a>
+</div>
+
+<script>
+    // Read score from URL
+    const params = new URLSearchParams(window.location.search);
+    const score = params.get('score');
+    const total = params.get('total');
+    document.getElementById('scoreText').innerText = 
+        'You scored ' + score + ' out of ' + total;
+</script>
+
+</body>
+</html>

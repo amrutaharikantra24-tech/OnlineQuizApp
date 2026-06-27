@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="dashboard">
+    <div class="dashboard-header">
+        <h2>Mock Test Portal</h2>
+        <p>Prepare smarter. Score higher. Choose your exam below.</p>
+    </div>
+
+    <div class="card-container">
+
+        <div class="card" onclick="location.href='QuizLoader?category=upsc'">
+            <h3>UPSC</h3>
+            <p>Civil Services Exam</p>
+        </div>
+
+        <div class="card" onclick="location.href='QuizLoader?category=railway'">
+            <h3>Railway</h3>
+            <p>RRB NTPC / Group D</p>
+        </div>
+
+        <div class="card" onclick="location.href='QuizLoader?category=banking'">
+            <h3>Banking</h3>
+            <p>SBI / IBPS PO & Clerk</p>
+        </div>
+
+        <div class="card" onclick="location.href='QuizLoader?category=defence'">
+            <h3>Defence</h3>
+            <p>CDS / AFCAT / NDA</p>
+        </div>
+
+        <div class="card" onclick="location.href='QuizLoader?category=it'">
+            <h3>IT & Java</h3>
+            <p>Technical Quiz</p>
+        </div>
+
+        <div class="card" onclick="location.href='QuizLoader?category=gk'">
+            <h3>General Knowledge</h3>
+            <p>Current Affairs & GK</p>
+        </div>
+
+    </div>
+
+    <a href="LeaderboardServlet"><button class="logout" style="background: linear-gradient(135deg, #9b6fd4, #6a3fa0) !important; margin-right: 10px;">Leaderboard</button></a>
+<a href="index.html"><button class="logout">Logout</button></a>
+</div>
+
+</body>
+</html>
